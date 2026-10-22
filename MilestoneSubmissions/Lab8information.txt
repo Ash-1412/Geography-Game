@@ -1,0 +1,35 @@
+Team Number: 1
+
+Team Name: ATLAS
+
+Team Members: Aasha Shakya, Dominique Romero, Wonderful Abioye, Even Pidgeon, Calvin Voss
+
+Application Name: GeoGame
+
+Application Description: A guessing game where it gives the user fun facts about a place, 
+country, or region, and the user has to guess what the name of that place is. 
+
+Audience: Students who have an intrest in facts about different parts of the world. 
+This is also an educational game for kids.
+
+Vision Statement: For students and general kids who love facts and tidbits about the world. 
+GeoGame is an application where kids (or anyone) can play to not only cure boredom, but also learn 
+more about the world they live in. Unlike many of the geogaphy games out there on the internet, 
+this game challenges the player to connect facts to its respective place.
+
+Communication Plan: We plan to use discord for this project as it can be organized and versitile
+ accross different computers.
+
+Meeting Plan:
+TA meeting: Tuesdays, 5-5:15pm
+Team meetings: Thursdays, 12:45
+
+Extra Credit: 
+    1) Enough data: Because of the amount of data needed for each country, it may be difficult to include 
+    everything for each country. Rather than mapping the whole world and all its countries, we could 
+    scale it down to a region or continent
+    2) User email sharing: there could be leaks for personal information
+    3) Levels: Each country is unique, and how difficult the facts and hint should be can vary. We could use 
+    general catagory the can be taken away each level for difficulty (eg. flags)
+    4) Country Size: Many countries arr very small, so zoom features need to be implemented
+    5) Internet Traffic Overflow: Too many people on the server can cause it to go down or crash
