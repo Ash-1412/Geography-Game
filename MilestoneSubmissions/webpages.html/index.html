@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Title</title>
+</head>
+<body>
+
+  <main id="start-screen">
+
+    <header id="title-area">
+      <h1 id="game-title">GeoGame</h1>
+      <p id="game-tagline">Match the countries with their facts!</p>
+    </header>
+
+    <nav id="main-menu" aria-label="Main menu">
+      <ul>
+        <li><button id="btn-play" type="button">Play</button></li>
+        <li><button id="btn-continue" type="button">Continue</button></li>
+        <li><button id="btn-settings" type="button">Settings</button></li>
+        <li><button id="btn-credits" type="button">Credits</button></li>
+        <li><button id="btn-quit" type="button">Quit</button></li>
+      </ul>
+    </nav>
+
+    <footer id="start-footer">
+      <p id="version">v0.1.0</p>
+      <p id="copyright">&copy; 2026 ATLAS</p>
+    </footer>
+
+  </main>
+
+  <!-- Hidden panels, to be shown by your own JS later -->
+  <section id="settings-panel" hidden aria-label="Settings">
+    <h2>Settings</h2>
+    <label for="volume">Volume</label>
+    <input id="volume" type="range" min="0" max="100" value="50">
+    <button id="btn-settings-close" type="button">Back</button>
+  </section>
+
+  <section id="credits-panel" hidden aria-label="Credits">
+    <h2>Credits</h2>
+    <p>Made by Studio Name</p>
+    <button id="btn-credits-close" type="button">Back</button>
+  </section>
+
+</body>
+</html>
