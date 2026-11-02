@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Game Title</title>
+</head>
+<body>
+
+  <main id="register-screen">
+
+    <header id="register-header">
+      <h1 id="game-title">Game Title</h1>
+      <h2>Create Account</h2>
+    </header>
+
+    <form id="register-form" action="/register" method="POST">
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" minlength="3" maxlength="20" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      </div>
+
+      <div class="field">
+        <label for="confirm">Confirm password</label>
+        <input id="confirm" name="confirm" type="password" autocomplete="new-password" minlength="8" required>
+      </div>
+
+      <button id="btn-register" type="submit">Register</button>
+
+    </form>
+
+    <nav id="register-links" aria-label="Account links">
+      <p>Already have an account? <a href="login.html">Log in</a></p>
+      <p><a href="start-screen.html">Back to start screen</a></p>
+    </nav>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log In - Game Title</title>
+</head>
+<body>
+
+  <main id="login-screen">
+
+    <header id="login-header">
+      <h1 id="game-title">Game Title</h1>
+      <h2>Log In</h2>
+    </header>
+
+    <p id="login-error" role="alert" hidden></p>
+
+    <form id="login-form" action="/login" method="POST">
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+
+      <div class="field">
+        <input id="remember" name="remember" type="checkbox">
+        <label for="remember">Remember me</label>
+      </div>
+
+      <button id="btn-login" type="submit">Log In</button>
+
+    </form>
+
+    <nav id="login-links" aria-label="Account links">
+      <p><a href="forgot-password.html">Forgot your password?</a></p>
+      <p>No account? <a href="register.html">Create one</a></p>
+      <p><a href="start-screen.html">Back to start screen</a></p>
+    </nav>
+
+  </main>
+
+</body>
+</html>
