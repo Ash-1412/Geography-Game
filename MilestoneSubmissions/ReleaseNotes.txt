@@ -1,2 +1,3 @@
 - created new repo
-- added wireframes for separate pages 
+- added wireframes for separate pages
+- added html files
