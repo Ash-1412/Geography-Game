@@ -1,3 +1,7 @@
 - created new repo
 - added wireframes for separate pages
 - added html files
+
+11.3.26
+- Added Landing Page HTML
+- Added image resources, may not be the ones ultimately used
