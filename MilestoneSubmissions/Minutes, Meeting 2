@@ -1,3 +1,4 @@
+Minute Notes for 11/3/2026
 - Aasha added basic structure html files
 - Evan worked on the consistent nav bar in html
 - Dominique added the basic html file structres and css styling
@@ -7,3 +8,5 @@
   - images for the buttons
 - Basic html pages are renderable
 - Questions for API requests
+- Be more specific about release notes updates
+- In regards to API calls, see how much we use and if we think we will hit the limit, perhaps switch to storing data
