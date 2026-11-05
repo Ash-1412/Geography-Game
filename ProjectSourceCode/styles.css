@@ -4,7 +4,6 @@
   border-radius: 4px;
 }
 
-
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
@@ -66,7 +65,6 @@ body {
 #register-links p {
     margin-bottom: 10px;
 }
-
 
 /* Login card */
 .login-card {

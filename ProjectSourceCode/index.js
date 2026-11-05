@@ -7,3 +7,11 @@ const bodyParser = require('body-parser');
 const session = require('express-session'); // To set the session object. To store or access session data, use the `req.session`, which is (generally) serialized as JSON by the store.
 const bcrypt = require('bcryptjs'); //  To hash passwords
 const axios = require('axios');
+
+// Keep any existing environment-loading code before importing app.
+// const app = require('./app');
+// const port = process.env.PORT || 3000;
+
+// app.listen(port, () => {
+//   console.log(`Server listening on port ${port}`);
+// });
