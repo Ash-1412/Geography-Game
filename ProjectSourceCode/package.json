@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --timeout 10000 \"test/**/*.spec.js\""
+  }
+}
