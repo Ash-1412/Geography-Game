@@ -25,11 +25,13 @@ TA meeting: Tuesdays, 5-5:15pm
 Team meetings: Thursdays, 12:45
 
 Extra Credit: 
-    1) Enough data: Because of the amount of data needed for each country, it may be difficult to include 
-    everything for each country. Rather than mapping the whole world and all its countries, we could 
-    scale it down to a region or continent
-    2) User email sharing: there could be leaks for personal information
-    3) Levels: Each country is unique, and how difficult the facts and hint should be can vary. We could use 
-    general catagory the can be taken away each level for difficulty (eg. flags)
-    4) Country Size: Many countries arr very small, so zoom features need to be implemented
+    1) Enough data: Because of the amount of data needed for each country, it may be difficult to include everything for each country. 
+    Mitigation Strategy: Rather than mapping the whole world and all its countries, we could scale it down to a region or continent
+    2) User email sharing: there could be leaks for personal information 
+    Mitigation Strategy: We could use only the username and password so emails won't be leaked/tied to a password.
+    3) Levels: Each country is unique, and how difficult the facts and hint should be can vary. 
+    Mitigation Strategy: We could select from a smaller pool handpicked questions and hints or general category the can be taken away each level for difficulty       (eg. flags)
+    4) Country Size: Many countries are very small and not be visible to the user.
+    Mitigation Strategy: A zoom feature can be added to the map or we can put less emphasis on users visually seeing a map.
     5) Internet Traffic Overflow: Too many people on the server can cause it to go down or crash
+    Mitigation Strategy: The server we are hosting on can be upgraded or potentially a wait list can be added so the number of users playing is limited.
