@@ -29,6 +29,21 @@ body {
     margin-bottom: 25px;
 }
 
+/* profile container */
+.profile-container {
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+/* sub container that contains info in profile */
+.section-card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    height: calc(100% - 2rem);
+}
+
 #game-title {
     font-size: 30px;
     font-weight: bold;
