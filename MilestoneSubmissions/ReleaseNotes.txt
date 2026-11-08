@@ -5,3 +5,4 @@
 11.3.26
 - Added Landing Page HTML
 - Added image resources, may not be the ones ultimately used
+- Added sql for user info
