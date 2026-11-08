@@ -1,3 +1,7 @@
 node_modules/
+<<<<<<< HEAD
 .env
 .env.test
+=======
+./ProjectSourceCode/.env
+>>>>>>> origin/main

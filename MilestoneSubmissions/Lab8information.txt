@@ -1,4 +1,4 @@
-Team Number: 1
+Team Number: 013-1
 
 Team Name: ATLAS
 
@@ -17,8 +17,10 @@ GeoGame is an application where kids (or anyone) can play to not only cure bored
 more about the world they live in. Unlike many of the geogaphy games out there on the internet, 
 this game challenges the player to connect facts to its respective place.
 
-Communication Plan: We plan to use discord for this project as it can be organized and versitile
- accross different computers.
+Communication Plan: We plan to use discord for this project as it can be organized and versatile
+across different computers.
+
+Development Method: We plan to use an Agile development method.
 
 Meeting Plan:
 TA meeting: Tuesdays, 5-5:15pm
