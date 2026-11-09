@@ -11,7 +11,7 @@ Team GitHub Usernames:
     Even Pidgeon:
     Calvin Voss:
 
-Team Emails:
+Team Emails (as used in GitHub):
     Aasha Shakya: aasha.shakya@gmail.com
     Dominique Romero:
     Wonderful Abioye:
@@ -20,8 +20,8 @@ Team Emails:
 
 Application Name: GeoGame
 
-Application Description: A guessing game where it gives the user fun facts about a place, 
-country, or region, and the user has to guess what the name of that place is. 
+Application Description: A guessing game where it gives the user fun facts about a place, country, or region, and the user has to guess what the name of that place is. There will be difficulty levels, and depending on each, there will be more or less clues for each question. 
+The database will store user information, such as username and password, their score, their friends list, and other achievements.
 
 Audience: Students who have an intrest in facts about different parts of the world. 
 This is also an educational game for kids.
