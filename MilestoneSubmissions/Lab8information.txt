@@ -4,6 +4,20 @@ Team Name: ATLAS
 
 Team Members: Aasha Shakya, Dominique Romero, Wonderful Abioye, Even Pidgeon, Calvin Voss
 
+Team GitHub Usernames:
+    Aasha Shakya: Ash-1412
+    Dominique Romero:
+    Wonderful Abioye:
+    Even Pidgeon:
+    Calvin Voss:
+
+Team Emails:
+    Aasha Shakya: aasha.shakya@gmail.com
+    Dominique Romero:
+    Wonderful Abioye:
+    Even Pidgeon:
+    Calvin Voss:
+
 Application Name: GeoGame
 
 Application Description: A guessing game where it gives the user fun facts about a place, 
