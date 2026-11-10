@@ -2,5 +2,28 @@
   "scripts": {
     "start": "node index.js",
     "test": "mocha --timeout 10000 \"test/**/*.spec.js\""
+  },
+  "name": "repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "4.5.0",
+    "chai-http": "4.4.0",
+    "mocha": "10.8.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.21.1",
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.4.0",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "pg-promise": "^12.8.0"
   }
 }
