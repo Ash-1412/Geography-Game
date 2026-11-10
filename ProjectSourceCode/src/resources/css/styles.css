@@ -127,3 +127,158 @@ body {
 #login-error {
     font-size: 14px;
 }
+
+
+/*===============================================================================
+
+
+/* Card used by the login and question pages.
+   Skip this block if styles.css already defines .login-card. */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+ 
+#game-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+ 
+#question-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+ 
+/* The four answer buttons */
+.option-btn {
+    padding: 0.9rem 1rem;
+    border-width: 2px;
+    border-radius: 10px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+ 
+.option-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
+}
+ 
+.option-btn:active {
+    transform: translateY(0);
+}
+
+/*================================Active Game css=================================*/
+:root {
+    --bg: #ddeee7;
+    --card: #fffdf7;
+    --ink: #1d3d42;
+    --muted: #163e40;
+    --teal: #3a8077;
+    --teal-dark: #2f6962;
+    --shadow: #b3d3ca;
+    --field-border: #b9c9c6;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+}
+
+.game-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 36px 40px 32px;
+    background: var(--card);
+    border: 2px solid var(--ink);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 var(--shadow);
+    text-align: center;
+}
+
+.logo {
+    font-size: 36px;
+    line-height: 1;
+    color: var(--teal);
+}
+
+#game-title {
+    margin: 10px 0 18px;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+#question-text {
+    margin: 0 0 26px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.options {
+    display: grid;
+    gap: 14px;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 14px;
+    font: inherit;
+    font-size: 20px;
+    color: var(--teal);
+    background: #ffffff;
+    border: 2px solid var(--teal);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+
+.option-btn:hover {
+    color: #ffffff;
+    background: var(--teal);
+    box-shadow: 0 4px 0 var(--teal-dark);
+    transform: translateY(-2px);
+}
+
+.option-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.option-btn:focus-visible {
+    outline: 3px solid rgba(58, 128, 119, 0.4);
+    outline-offset: 2px;
+}
+
+#question-links {
+    margin-top: 26px;
+}
+
+#question-links p {
+    margin: 0;
+    font-size: 17px;
+}
+
+#question-links a {
+    color: var(--teal);
+}
+
+#question-links a:hover {
+    color: var(--teal-dark);
+}

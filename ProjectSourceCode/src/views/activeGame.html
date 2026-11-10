@@ -1,53 +1,36 @@
-<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-    <div class="container-fluid container">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="activeGame.html">Game</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
-            </ul>
-        </div>
-</nav>
-</body>
-</html>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Choose an Answer - Game Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../resources/css/styles.css">
 </head>
 
 <body>
 
-    <main id="question-screen" class="container py-5 d-flex align-items-center justify-content-center">
+    <main id="question-screen">
 
-        <div class="login-card">
+        <div class="game-card">
 
-            <header id="question-header" class="text-center mb-4">
-                <h1 id="game-title">Game Title</h1>
+            <header id="question-header">
+                <div class="logo" aria-hidden="true">&#10022;</div>
+                <h1 id="game-title">Geo Game</h1>
                 <h2 id="question-text">What is the capital of France?</h2>
             </header>
 
             <form id="options-form" action="/answer" method="POST">
 
-                <div class="d-grid gap-3">
-                    <button type="submit" name="choice" value="Paris" class="btn btn-outline-primary btn-lg option-btn">Country</button>
-                    <button type="submit" name="choice" value="Rome" class="btn btn-outline-primary btn-lg option-btn">Country</button>
-                    <button type="submit" name="choice" value="Madrid" class="btn btn-outline-primary btn-lg option-btn">Country</button>
-                    <button type="submit" name="choice" value="Berlin" class="btn btn-outline-primary btn-lg option-btn">Country</button>
+                <div class="options">
+                    <button type="submit" name="choice" value="Paris" class="option-btn">Country</button>
+                    <button type="submit" name="choice" value="Rome" class="option-btn">Country</button>
+                    <button type="submit" name="choice" value="Madrid" class="option-btn">Country</button>
+                    <button type="submit" name="choice" value="Berlin" class="option-btn">Country</button>
                 </div>
 
             </form>
 
-            <nav id="question-links" class="text-center mt-4" aria-label="Game links">
-                <p><a href="landingPage.html">Back to start screen</a></p>
+            <nav id="question-links" aria-label="Game links">
+                <p><a href="landingPage.html">Back to Start</a></p>
             </nav>
 
         </div>
