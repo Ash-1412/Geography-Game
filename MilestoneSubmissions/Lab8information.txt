@@ -7,14 +7,14 @@ Team Members: Aasha Shakya, Dominique Romero, Wonderful Abioye, Evan Pigeon, Cal
 Team GitHub Usernames:
     Aasha Shakya: Ash-1412
     Dominique Romero: dominiqueromero
-    Wonderful Abioye:
+    Wonderful Abioye: Nuubier
     Evan Pigeon: epigeon1
     Calvin Voss:
 
 Team Emails (as used in GitHub):
     Aasha Shakya: aasha.shakya@gmail.com
     Dominique Romero: dominiqu3.romero@gmail.com
-    Wonderful Abioye:
+    Wonderful Abioye: nuubieredu@gmail.com
     Evan Pigeon: espigeon1@gmail.com
     Calvin Voss:
 
@@ -38,7 +38,7 @@ Development Method: We plan to use an Agile development method.
 
 Meeting Plan:
 TA meeting: Tuesdays, 5-5:15pm
-Team meetings: Thursdays, 12:45
+Team meetings: Tuesdays, 1:00 PM
 
 Extra Credit: 
     1) Enough data: Because of the amount of data needed for each country, it may be difficult to include everything for each country. 
