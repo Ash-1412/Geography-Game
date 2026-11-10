@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,27 +12,6 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-        }
-
-        /* Make all the links look like the original boxes, not blue underlined text */
-        a {
-            color: inherit;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.15s, transform 0.1s;
-        }
-
-        a:hover {
-            background-color: #d0d0d0;
-        }
-
-        a:active {
-            transform: scale(0.97);
-        }
-
-        a:focus-visible {
-            outline: 3px solid #3b6df0;
-            outline-offset: 2px;
         }
 
         .menu {
@@ -52,7 +32,6 @@
         }
 
         .play {
-            display: block;
             border: 2px solid black;
             border-radius: 50%;
             width: 120px;
@@ -77,16 +56,16 @@
 
 <body>
 
-    <a class="menu" href="#" aria-label="Menu">⋮</a>
+    <div class="menu">⋮</div>
 
     <h1>GEO<br>GAME</h1>
 
-    <a class="play" href="activeGame.html" aria-label="Play">▶</a>
+    <div class="play">▶</div>
 
     <div class="buttons">
-        <a class="button" href="levels.html">Levels</a>
-        <a class="button" href="shop.html">Shop</a>
-        <a class="button" href="profile.html">Profile</a>
+        <div class="button">Levels</div>
+        <div class="button">Shop</div>
+        <div class="button">Profile</div>
     </div>
 
 </body>
