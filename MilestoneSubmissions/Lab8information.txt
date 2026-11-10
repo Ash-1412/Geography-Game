@@ -9,14 +9,14 @@ Team GitHub Usernames:
     Dominique Romero: dominiqueromero
     Wonderful Abioye: Nuubier
     Evan Pigeon: epigeon1
-    Calvin Voss:
+    Calvin Voss: cavo5201
 
 Team Emails (as used in GitHub):
     Aasha Shakya: aasha.shakya@gmail.com
     Dominique Romero: dominiqu3.romero@gmail.com
     Wonderful Abioye: nuubieredu@gmail.com
     Evan Pigeon: espigeon1@gmail.com
-    Calvin Voss:
+    Calvin Voss: cavo5201@colorado.edu
 
 Application Name: GeoGame
 
