@@ -20,7 +20,10 @@ Team Emails (as used in GitHub):
 
 Application Name: GeoGame
 
-Application Description: A guessing game where it gives the user fun facts about a place, country, or region, and the user has to guess what the name of that place is. There will be difficulty levels, and depending on each, there will be more or less clues for each question. The facts will be from an external API, pulling in information and organizing it into its respective tables. When the game runs, the server will request the respective facts for the countries and display it on the questions screen.
+Application Description: A guessing game where it gives the user fun facts about a place, country, or region, 
+and the user has to guess what the name of that place is. There will be difficulty levels, and depending on each, there will be more or less clues for each
+question. The facts will be from an external API, pulling in information and organizing it into its respective tables. 
+When the game runs, the server will request the respective facts for the countries and display it on the questions screen.
 When the user enters the website, they will see the landing page, with the game title, play button, menu, and login. If they don't have a login, then they can register and add their information into the database. Each user will have their own separate database connected to their username.
 The database will store user information, such as username and password, their score, their friends list, and other achievements. They will be able to view their username, score, friends list, and achievements in their profile webpage, but password will not be shown- it will by encrypted in the database. 
 
