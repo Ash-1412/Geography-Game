@@ -7,6 +7,7 @@
 - Added image resources, may not be the ones ultimately used
 - Added sql for user info
 
+11.10.26
 - Updated html files: activeGame, landingPage, login, register
 - Fixed merge conflicts
 - fixed docker file
