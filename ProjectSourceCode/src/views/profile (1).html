@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - GEO GAME</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: #ddeee7;
+            color: #1d3d42;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #1d3d42;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .brand { color: #fffdf7; font-size: 22px; font-weight: bold; text-decoration: none; }
+        .nav-links { display: flex; flex-wrap: wrap; gap: 20px; }
+        .nav-links a { color: #deeee7; text-decoration: none; }
+        .nav-links a:hover, .nav-links .current { color: #f5cd79; }
+
+        main { max-width: 1050px; margin: 45px auto; padding: 0 20px; }
+
+        .heading { text-align: center; margin-bottom: 30px; }
+        .heading .compass { font-size: 40px; color: #3a8077; }
+        h1 { font-size: 42px; margin: 8px 0; }
+        .heading p { color: #51716d; margin: 0; }
+
+        .profile-box {
+            background: #fffdf7;
+            border: 2px solid #1d3d42;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 8px 8px 0 #b3d3ca;
+        }
+
+        .welcome { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+        .avatar {
+            background: #3a8077;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+        }
+        .welcome h2 { margin: 0 0 6px; font-size: 24px; }
+        .welcome p { margin: 0; color: #54726e; }
+
+        .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 30px; }
+        .stat {
+            background: #e7f2eb;
+            border: 1px solid #bbd3ca;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat strong { display: block; font-size: 30px; margin-bottom: 6px; }
+        .stat span { font-size: 14px; color: #54726e; }
+
+        .sections { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+        .section {
+            border: 1px solid #c9dcd4;
+            border-radius: 14px;
+            padding: 22px;
+            background: white;
+        }
+        h3 { font-size: 20px; margin: 0 0 18px; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th { color: #54726e; text-align: left; font-weight: normal; }
+        th, td { padding: 11px 5px; border-bottom: 1px solid #e2ece7; }
+        tr:last-child td { border-bottom: none; }
+        td:last-child, th:last-child { text-align: right; }
+        .points { color: #2f6962; font-weight: bold; }
+
+        .trophy { font-size: 39px; margin-bottom: 10px; }
+        .best-score { font-size: 34px; font-weight: bold; margin: 8px 0; }
+        .muted { color: #54726e; font-size: 14px; }
+        .difficulty {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 7px 13px;
+            border-radius: 20px;
+            color: #814c24;
+            background: #ffebcf;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .map-section { margin-top: 22px; text-align: center; }
+        .map-section h3 { margin-bottom: 6px; }
+        .map-section p { color: #54726e; font-size: 14px; }
+        .map-section img { display: block; max-width: 100%; max-height: 330px; margin: 20px auto 10px; }
+        .map-section small a { color: #3a8077; }
+
+        .footer-link { text-align: center; margin-top: 27px; }
+        .footer-link a { color: #2f6962; text-decoration: none; font-weight: bold; }
+        .footer-link a:hover { text-decoration: underline; }
+
+        @media (max-width: 700px) {
+            nav { justify-content: center; }
+            .stats { grid-template-columns: 1fr; }
+            .sections { grid-template-columns: 1fr; }
+            .profile-box { padding: 18px; }
+            h1 { font-size: 34px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="brand" href="index.html">🌍 GEO GAME</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="activeGame.html">Game</a>
+            <a class="current" href="profile.html" aria-current="page">Profile</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="heading">
+            <div class="compass">✦</div>
+            <h1>Explorer Profile</h1>
+            <p>Your adventures, achievements, and geography progress</p>
+        </header>
+
+        <div class="profile-box">
+            <div class="welcome">
+                <div class="avatar" aria-hidden="true">🌎</div>
+                <div>
+                    <h2>Hello, username!</h2>
+                    <p>Ready for your next adventure?</p>
+                </div>
+            </div>
+
+            <!-- Example stats; replace with real player data later. -->
+            <div class="stats">
+                <div class="stat"><strong>5</strong><span>Quizzes Played</span></div>
+                <div class="stat"><strong>5,000</strong><span>Highest Score</span></div>
+                <div class="stat"><strong>15,000</strong><span>Total Points</span></div>
+            </div>
+
+            <div class="sections">
+                <section class="section">
+                    <h3>🗺️ Quiz History</h3>
+                    <table>
+                        <thead><tr><th>Score</th><th>Date</th><th>Points</th></tr></thead>
+                        <tbody>
+                            <tr><td>5/12</td><td>5/12/2026</td><td class="points">5,000</td></tr>
+                            <tr><td>4/12</td><td>5/12/2026</td><td class="points">4,000</td></tr>
+                            <tr><td>3/12</td><td>5/12/2026</td><td class="points">3,000</td></tr>
+                            <tr><td>2/12</td><td>5/12/2026</td><td class="points">2,000</td></tr>
+                            <tr><td>1/12</td><td>5/12/2026</td><td class="points">1,000</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h3>🏆 Personal Best</h3>
+                    <div class="trophy" aria-hidden="true">🥇</div>
+                    <div class="best-score">5,000 pts</div>
+                    <p>5 out of 12 questions correct</p>
+                    <div class="muted">May 12, 2026</div>
+                    <span class="difficulty">Hard Difficulty</span>
+                </section>
+            </div>
+
+            <section class="section map-section">
+                <h3>Explore the World</h3>
+                <p>Every great explorer starts somewhere.</p>
+                <!-- Keep the world map image in your existing resources/img folder. -->
+                <img src="../resources/img/worldmap1.png" alt="Map of the world">
+                <small><a href="https://freepngimg.com/png/125848-world-map" target="_blank" rel="noopener noreferrer">World map source: FreePNGimg.com</a></small>
+            </section>
+        </div>
+        <div class="footer-link"><a href="index.html">← Back to Home</a></div>
+    </main>
+</body>
+</html>
