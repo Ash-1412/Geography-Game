@@ -1,6 +1,6 @@
 services:
   db-test:
-    image: postgres:17.6
+    image: postgres:18
     env_file: .env.test
     healthcheck:
       test:
@@ -10,8 +10,8 @@ services:
       retries: 20
       start_period: 10s
     volumes:
-      - lab10-test-db:/var/lib/postgresql/data
-      - ./src/init_data:/docker-entrypoint-initdb.d:ro
+      - lab10-test-db:/var/lib/postgresql
+      - ./src/init_data/create.sql:/docker-entrypoint-initdb.d/create.sql:ro
   tests:
     image: node:22.19.0-bookworm
     working_dir: /repository
