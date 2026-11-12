@@ -79,7 +79,7 @@ app.get('/profile', (req, res) => {
 app.get('/activeGame', (req, res) => res.render('activeGame'));
 
 //======== LANDING PAGE ==================
-app.get('/landingPage', (req, res) => res.render('landingPage'));
+app.get('/', (req, res) => res.render('index'));
 
 // 5. last line
 module.exports = app;
