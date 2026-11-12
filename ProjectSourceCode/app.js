@@ -8,6 +8,9 @@ const axios = require('axios');
 const {db} = require('./src/db'); // Shared database module
 const validateRegistration = require('./src/validateRegistration');
 
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'src', 'views'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(
@@ -71,6 +74,12 @@ app.get('/profile', (req, res) => {
   }
   return res.status(200).json({username: req.session.user.username});
 });
+
+//======== ACTIVE GAME ==================
+app.get('/activeGame', (req, res) => res.render('activeGame'));
+
+//======== LANDING PAGE ==================
+app.get('/landingPage', (req, res) => res.render('landingPage'));
 
 // 5. last line
 module.exports = app;
