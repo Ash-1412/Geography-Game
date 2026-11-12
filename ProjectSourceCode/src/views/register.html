@@ -1,53 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Game - Register</title>
+    <style>
+        body {
+            background-color: #d9eee7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 15px;
+            color: #163e40;
+        }
 
-    <title>Register - Game Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/css/styles.css">
+        .register-box {
+            background-color: #fffdf5;
+            border: 2px solid #163e40;
+            border-radius: 15px;
+            max-width: 400px;
+            padding: 30px;
+            margin: 30px auto;
+            box-shadow: 6px 6px #9fcac0;
+        }
+
+        h1, h2, .intro, .links {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .compass {
+            text-align: center;
+            font-size: 40px;
+            color: #138077;
+        }
+
+        .intro {
+            color: #54736e;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #9cbeb4;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            background-color: #138077;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d615b;
+        }
+
+        a {
+            color: #138077;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="register-box">
+        <div class="compass">✦</div>
+        <h1>GEO GAME</h1>
+        <h2>Create an Account</h2>
+        <p class="intro">Your adventure around the world starts here!</p>
 
-    <main id="register-screen" class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <form action="/register" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
 
-        <div class="register-card">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-            <header id="register-header">
-                <h1 id="game-title">Geo Game</h1>
-                <h2>Create Account</h2>
-            </header>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" required>
 
-            <form id="register-form" action="/register" method="POST">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
 
-                <div class="field mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input id="username" name="username" type="text" class="form-control" placeholder="Enter username" autocomplete="username" minlength="3" maxlength="20" required>
-                </div>
+            <button type="submit">Start Exploring!</button>
+        </form>
 
-                <div class="field mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input id="password" name="password" type="password" class="form-control" placeholder="Enter password" autocomplete="new-password" minlength="8" required>
-                </div>
-
-                <div class="field mb-4">
-                    <label for="confirm" class="form-label">Confirm password</label>
-                    <input id="confirm" name="confirm" type="password" class="form-control" placeholder="Confirm password" autocomplete="new-password" minlength="8" required>
-                </div>
-
-                <button id="btn-register" type="submit" class="btn btn-primary w-100">Register</button>
-            </form>
-
-            <nav id="register-links" class="text-center mt-4" aria-label="Account links">
-
-                <p>Already have an account? <a href="login.html">Log in</a> </p>
-                <p> <a href="start-screen.html">Back to start screen</a> </p>
-
-            </nav>
+        <div class="links">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+            <a href="index.html">Back to Start</a>
         </div>
-    </main>
+    </div>
 </body>
 </html>
