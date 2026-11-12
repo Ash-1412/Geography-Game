@@ -44,6 +44,14 @@ Meeting Plan:
 TA meeting: Tuesdays, 5-5:15pm
 Team meetings: Tuesdays, 1:00 PM
 
+Wireframe sketches can be found at:
+https://github.com/Ash-1412/Geography-Game/blob/main/MilestoneSubmissions/WireframeSketches/ActiveGameWireframe.PNG
+https://github.com/Ash-1412/Geography-Game/blob/main/MilestoneSubmissions/WireframeSketches/CSCI%203308%20Wireframes_261028_031855.pdf
+https://github.com/Ash-1412/Geography-Game/blob/main/MilestoneSubmissions/WireframeSketches/Geography%20Wireframe.pdf
+https://github.com/Ash-1412/Geography-Game/blob/main/MilestoneSubmissions/WireframeSketches/leaderboard_wf.pdf
+https://github.com/Ash-1412/Geography-Game/blob/main/MilestoneSubmissions/WireframeSketches/profile_loggedin_EP.jpg
+https://github.com/Ash-1412/Geography-Game/blob/main/MilestoneSubmissions/WireframeSketches/profile_notloggedin_EP.jpg
+
 Extra Credit: 
     1) Enough data: Because of the amount of data needed for each country, it may be difficult to include everything for each country. MILD SEVERITY
     Mitigation Strategy: Rather than mapping the whole world and all its countries, we could scale it down to a region or continent
