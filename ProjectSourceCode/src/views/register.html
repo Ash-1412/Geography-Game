@@ -1,115 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geo Game - Register</title>
-    <style>
-        body {
-            background-color: #d9eee7;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 30px 15px;
-            color: #163e40;
-        }
-
-        .register-box {
-            background-color: #fffdf5;
-            border: 2px solid #163e40;
-            border-radius: 15px;
-            max-width: 400px;
-            padding: 30px;
-            margin: 30px auto;
-            box-shadow: 6px 6px #9fcac0;
-        }
-
-        h1, h2, .intro, .links {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 42px;
-            margin: 10px 0;
-        }
-
-        h2 {
-            margin-bottom: 10px;
-        }
-
-        .compass {
-            text-align: center;
-            font-size: 40px;
-            color: #138077;
-        }
-
-        .intro {
-            color: #54736e;
-            margin-bottom: 25px;
-        }
-
-        label {
-            display: block;
-            margin: 15px 0 5px;
-            font-weight: bold;
-        }
-
-        input {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #9cbeb4;
-            border-radius: 6px;
-            font-size: 15px;
-        }
-
-        button {
-            width: 100%;
-            margin-top: 25px;
-            padding: 13px;
-            background-color: #138077;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 17px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0d615b;
-        }
-
-        a {
-            color: #138077;
-        }
-    </style>
+    <title>Register - GEO GAME</title>
+    <link rel="stylesheet" href="../resources/css/styles.css">
 </head>
-<body>
-    <div class="register-box">
-        <div class="compass">✦</div>
-        <h1>GEO GAME</h1>
-        <h2>Create an Account</h2>
-        <p class="intro">Your adventure around the world starts here!</p>
 
-        <form action="/register" method="POST">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+<body class="auth-page">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">🌍 GEO GAME</a>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" minlength="8" required>
-
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-
-            <button type="submit">Start Exploring!</button>
-        </form>
-
-        <div class="links">
-            <p>Already have an account? <a href="login.html">Log in</a></p>
-            <a href="index.html">Back to Start</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="activeGame.html">Game</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+            <a class="nav-signup current" href="register.html"
+               aria-current="page">Sign Up</a>
         </div>
-    </div>
+    </nav>
+
+    <main id="register-screen" class="auth-main">
+
+        <div class="register-card">
+
+            <header id="register-header">
+                <div class="compass" aria-hidden="true">✦</div>
+
+                <h1 id="game-title">GEO GAME</h1>
+
+                <span class="auth-label">New Explorer</span>
+
+                <h2>Create an Account</h2>
+
+                <p class="auth-subtitle">
+                    Your adventure around the world starts here!
+                </p>
+
+                <div class="route-mark" aria-hidden="true">
+                    <span></span>
+                    <span class="dash"></span>
+                    <span class="last"></span>
+                </div>
+            </header>
+
+            <form id="register-form" action="/register" method="POST">
+
+                <div class="field">
+                    <label class="form-label" for="username">
+                        Username
+                    </label>
+
+                    <input class="form-control"
+                           type="text"
+                           id="username"
+                           name="username"
+                           autocomplete="username"
+                           minlength="3"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="email">
+                        Email
+                    </label>
+
+                    <input class="form-control"
+                           type="email"
+                           id="email"
+                           name="email"
+                           autocomplete="email"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="password">
+                        Password
+                    </label>
+
+                    <input class="form-control"
+                           type="password"
+                           id="password"
+                           name="password"
+                           autocomplete="new-password"
+                           minlength="8"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="confirm-password">
+                        Confirm Password
+                    </label>
+
+                    <input class="form-control"
+                           type="password"
+                           id="confirm-password"
+                           name="confirm-password"
+                           autocomplete="new-password"
+                           minlength="8"
+                           required>
+                </div>
+
+                <button id="btn-register" type="submit">
+                    Start Exploring!
+                </button>
+
+            </form>
+
+            <div id="register-links">
+                <p>
+                    Already have an account?
+                    <a href="login.html">Log in</a>
+                </p>
+
+                <p>
+                    <a href="index.html">← Back to Home</a>
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
 </body>
 </html>
