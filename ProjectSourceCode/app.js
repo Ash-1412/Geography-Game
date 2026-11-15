@@ -5,12 +5,16 @@ const bodyParser = require('body-parser');
 const session = require('express-session'); // To set the session object. To store or access session data, use the `req.session`, which is (generally) serialized as JSON by the store.
 const bcrypt = require('bcryptjs'); //  To hash passwords
 const axios = require('axios');
+const hbs = require('hbs');
 const {db} = require('./src/db'); // Shared database module
 const validateRegistration = require('./src/validateRegistration');
-
+ 
+//======== VIEW ENGINE + PARTIALS ==================
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'src', 'views'));
-
+hbs.registerPartials(path.join(__dirname, 'src', 'views', 'partials'));
+ 
+//======== MIDDLEWARE ==================
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(
@@ -21,32 +25,18 @@ app.use(
   })
 );
 app.use('/resources', express.static(path.join(__dirname, 'src', 'resources')));
-
+ 
+//======== TEST ROUTE ==================
 app.get('/welcome', (req, res) => {
   res.json({status: 'success', message: 'Welcome!'});
 });
-
-app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src', 'views', 'login.html'));
-});
-
-app.post('/register', async (req, res) => {
-  if (!validateRegistration(req.body)) {
-    return res.status(400).json({message: 'Invalid input'});
-  }
-  try {
-    const hash = await bcrypt.hash(req.body.password, 10);
-    await db.none('INSERT INTO users (username, password) VALUES ($1, $2)', [
-      req.body.username,
-      hash,
-    ]);
-    return res.status(201).json({message: 'Registration successful'});
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({message: 'Server error'});
-  }
-});
-
+ 
+//======== LANDING PAGE ==================
+app.get('/', (req, res) => res.render('index'));
+ 
+//======== LOGIN ==================
+app.get('/login', (req, res) => res.render('login'));
+ 
 app.post('/login', async (req, res) => {
   const {username, password} = req.body || {};
   if (typeof username !== 'string' || typeof password !== 'string') {
@@ -67,19 +57,47 @@ app.post('/login', async (req, res) => {
     return res.status(500).json({message: 'Server error'});
   }
 });
-
+ 
+//======== REGISTER ==================
+app.get('/register', (req, res) => res.render('register'));
+ 
+app.post('/register', async (req, res) => {
+  if (!validateRegistration(req.body)) {
+    return res.status(400).json({message: 'Invalid input'});
+  }
+  try {
+    const hash = await bcrypt.hash(req.body.password, 10);
+    await db.none('INSERT INTO users (username, password) VALUES ($1, $2)', [
+      req.body.username,
+      hash,
+    ]);
+    return res.status(201).json({message: 'Registration successful'});
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({message: 'Server error'});
+  }
+});
+ 
+//======== PROFILE ==================
 app.get('/profile', (req, res) => {
   if (!req.session.user) {
     return res.status(401).json({message: 'Not authenticated'});
   }
   return res.status(200).json({username: req.session.user.username});
 });
-
+ 
 //======== ACTIVE GAME ==================
-app.get('/activeGame', (req, res) => res.render('activeGame'));
-
-//======== LANDING PAGE ==================
-app.get('/', (req, res) => res.render('index'));
-
+app.get('/activeGame', (req, res) =>
+  res.render('activeGame', {
+    question: 'What is the capital of France?',
+    options: ['Paris', 'Rome', 'Madrid', 'Berlin'],
+  })
+);
+ 
+app.post('/answer', (req, res) => {
+  console.log('Chose:', req.body.choice);
+  res.redirect('/activeGame');
+});
+ 
 // 5. last line
 module.exports = app;
