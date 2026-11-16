@@ -1,27 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - GEO GAME</title>
-    <link rel="stylesheet" href="../resources/css/styles.css">
+    <link rel="stylesheet" href="/resources/css/styles.css">
 </head>
 
 <body class="auth-page">
 
-    <nav class="site-nav" aria-label="Main navigation">
-        <a class="brand" href="index.html">🌍 GEO GAME</a>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="activeGame.html">Game</a>
-            <a href="profile.html">Profile</a>
-            <a href="login.html">Login</a>
-            <a class="nav-signup current" href="register.html"
-               aria-current="page">Sign Up</a>
-        </div>
-    </nav>
+    {{> navbar}}
 
     <main id="register-screen" class="auth-main">
 
@@ -47,40 +35,37 @@
                 </div>
             </header>
 
+            {{#if error}}
+            <p id="register-error" role="alert">{{error}}</p>
+            {{/if}}
+
             <form id="register-form" action="/register" method="POST">
 
                 <div class="field">
-                    <label class="form-label" for="username">
-                        Username
-                    </label>
-
+                    <label class="form-label" for="username">Username</label>
                     <input class="form-control"
                            type="text"
                            id="username"
                            name="username"
+                           value="{{username}}"
                            autocomplete="username"
                            minlength="3"
                            required>
                 </div>
 
                 <div class="field">
-                    <label class="form-label" for="email">
-                        Email
-                    </label>
-
+                    <label class="form-label" for="email">Email</label>
                     <input class="form-control"
                            type="email"
                            id="email"
                            name="email"
+                           value="{{email}}"
                            autocomplete="email"
                            required>
                 </div>
 
                 <div class="field">
-                    <label class="form-label" for="password">
-                        Password
-                    </label>
-
+                    <label class="form-label" for="password">Password</label>
                     <input class="form-control"
                            type="password"
                            id="password"
@@ -91,10 +76,7 @@
                 </div>
 
                 <div class="field">
-                    <label class="form-label" for="confirm-password">
-                        Confirm Password
-                    </label>
-
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
                     <input class="form-control"
                            type="password"
                            id="confirm-password"
@@ -113,11 +95,11 @@
             <div id="register-links">
                 <p>
                     Already have an account?
-                    <a href="login.html">Log in</a>
+                    <a href="/login">Log in</a>
                 </p>
 
                 <p>
-                    <a href="index.html">← Back to Home</a>
+                    <a href="/">← Back to Home</a>
                 </p>
             </div>
 

@@ -60,30 +60,58 @@ app.post('/login', async (req, res) => {
  
 //======== REGISTER ==================
 app.get('/register', (req, res) => res.render('register'));
- 
+
 app.post('/register', async (req, res) => {
+  const {username, email} = req.body;
+
   if (!validateRegistration(req.body)) {
-    return res.status(400).json({message: 'Invalid input'});
+    return res.status(400).render('register', {
+      error: 'Please check your details and try again.',
+      username,
+      email,
+    });
   }
+
+  const confirm = req.body['confirm-password'];
+  if (confirm !== undefined && confirm !== req.body.password) {
+    return res.status(400).render('register', {
+      error: 'Passwords do not match.',
+      username,
+      email,
+    });
+  }
+
   try {
     const hash = await bcrypt.hash(req.body.password, 10);
-    await db.none('INSERT INTO users (username, password) VALUES ($1, $2)', [
-      req.body.username,
-      hash,
-    ]);
-    return res.status(201).json({message: 'Registration successful'});
+    await db.none(
+      'INSERT INTO users (username, email, password) VALUES ($1, $2, $3)',
+      [username, email, hash]
+    );
+    return res.redirect('/login');
   } catch (err) {
+    if (err.code === '23505') {
+      // Postgres "unique violation": username (or email) already exists
+      return res.status(409).render('register', {
+        error: 'That username or email is already taken.',
+        username,
+        email,
+      });
+    }
     console.error(err);
-    return res.status(500).json({message: 'Server error'});
+    return res.status(500).render('register', {
+      error: 'Something went wrong. Please try again.',
+      username,
+      email,
+    });
   }
 });
  
 //======== PROFILE ==================
 app.get('/profile', (req, res) => {
   if (!req.session.user) {
-    return res.status(401).json({message: 'Not authenticated'});
+    return res.redirect('/login');
   }
-  return res.status(200).json({username: req.session.user.username});
+  res.render('profile', {username: req.session.user.username});
 });
  
 //======== ACTIVE GAME ==================

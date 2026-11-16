@@ -11,3 +11,8 @@
 - Updated html files: activeGame, landingPage, login, register
 - Fixed merge conflicts
 - fixed docker file
+
+11.15.26
+- updated login, register, and nav bar to hbs
+- attempted setting up register to get and store user info, works but does not display error messages yet in front encrypted
+- navbar will be put as tags for hbs files
