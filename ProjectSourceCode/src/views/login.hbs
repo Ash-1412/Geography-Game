@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - GEO GAME</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
+</head>
+<body class="auth-page">
+
+    <!-- Shared navigation -->
+    {{> navbar}}
+
+    <main class="auth-main" id="login-screen">
+        <div class="login-card">
+            <header id="login-header">
+                <div class="compass" aria-hidden="true">✦</div>
+                <h1 id="game-title">GEO GAME</h1>
+                <span class="auth-label">Explorer Checkpoint</span>
+                <h2>Welcome Back!</h2>
+                <p class="auth-subtitle">Your next adventure is just a login away.</p>
+                <div class="route-mark" aria-hidden="true">
+                    <span></span><span class="dash"></span><span class="last"></span>
+                </div>
+            </header>
+
+            <!-- The backend can display an error here -->
+            <p id="login-error" role="alert" hidden></p>
+
+            <form id="login-form" action="/login" method="POST">
+                <div class="field">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control" type="text" id="username" name="username"
+                           placeholder="Enter your username" autocomplete="username" required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" id="password" name="password"
+                           placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="remember" name="remember">
+                    <label class="form-check-label" for="remember">Remember me</label>
+                </div>
+
+                <button type="submit" id="btn-login">Continue Exploring →</button>
+            </form>
+
+            <div id="login-links">
+                <p><a href="forgot-password.html">Forgot your password?</a></p>
+                <p>New explorer? <a href="register.html">Create an account</a></p>
+                <p><a href="/index">← Back to Home</a></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

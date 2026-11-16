@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - GEO GAME</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
+</head>
+<body class="profile-page">
+    {{> navbar}}
+
+    <main class="profile-main">
+        <header class="page-heading">
+            <div class="compass" aria-hidden="true">✦</div>
+            <h1>Explorer Profile</h1>
+            <p>Your adventures, achievements, and geography progress</p>
+        </header>
+
+        <div class="profile-box">
+            <div class="welcome">
+                <div class="avatar" aria-hidden="true">🌎</div>
+                <div>
+                    <h2>Hello, username!</h2>
+                    <p>Ready for your next adventure?</p>
+                </div>
+            </div>
+
+            <!-- Sample stats: replace with player data later. -->
+            <div class="stats">
+                <div class="stat"><strong>5</strong><span>Quizzes Played</span></div>
+                <div class="stat"><strong>5,000</strong><span>Highest Score</span></div>
+                <div class="stat"><strong>15,000</strong><span>Total Points</span></div>
+            </div>
+
+            <div class="sections">
+                <section class="section">
+                    <h3>🗺️ Quiz History</h3>
+                    <div class="history-table-wrapper">
+                        <table class="history-table">
+                            <thead>
+                                <tr><th>Score</th><th>Date</th><th>Points</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>5/12</td><td>5/12/2026</td><td class="points">5,000</td></tr>
+                                <tr><td>4/12</td><td>5/12/2026</td><td class="points">4,000</td></tr>
+                                <tr><td>3/12</td><td>5/12/2026</td><td class="points">3,000</td></tr>
+                                <tr><td>2/12</td><td>5/12/2026</td><td class="points">2,000</td></tr>
+                                <tr><td>1/12</td><td>5/12/2026</td><td class="points">1,000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>🏆 Personal Best</h3>
+                    <div class="trophy" aria-hidden="true">🥇</div>
+                    <div class="best-score">5,000 pts</div>
+                    <p>5 out of 12 questions correct</p>
+                    <div class="muted">May 12, 2026</div>
+                    <span class="difficulty">Hard Difficulty</span>
+                </section>
+            </div>
+
+            <section class="section map-section">
+                <h3>Explore the World</h3>
+                <p>Every great explorer starts somewhere.</p>
+                <img src="../resources/img/worldmap1.png" alt="Map of the world">
+                <small><a href="https://freepngimg.com/png/125848-world-map"
+                          target="_blank" rel="noopener noreferrer">World map source: FreePNGimg.com</a></small>
+            </section>
+        </div>
+
+        <div class="footer-link"><a href="index.html">← Back to Home</a></div>
+    </main>
+</body>
+</html>

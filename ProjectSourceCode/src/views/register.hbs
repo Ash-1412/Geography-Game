@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - GEO GAME</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
+</head>
+
+<body class="auth-page">
+
+    {{> navbar}}
+
+    <main id="register-screen" class="auth-main">
+
+        <div class="register-card">
+
+            <header id="register-header">
+                <div class="compass" aria-hidden="true">✦</div>
+
+                <h1 id="game-title">GEO GAME</h1>
+
+                <span class="auth-label">New Explorer</span>
+
+                <h2>Create an Account</h2>
+
+                <p class="auth-subtitle">
+                    Your adventure around the world starts here!
+                </p>
+
+                <div class="route-mark" aria-hidden="true">
+                    <span></span>
+                    <span class="dash"></span>
+                    <span class="last"></span>
+                </div>
+            </header>
+
+            {{#if error}}
+            <p id="register-error" role="alert">{{error}}</p>
+            {{/if}}
+
+            <form id="register-form" action="/register" method="POST">
+
+                <div class="field">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control"
+                           type="text"
+                           id="username"
+                           name="username"
+                           value="{{username}}"
+                           autocomplete="username"
+                           minlength="3"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control"
+                           type="email"
+                           id="email"
+                           name="email"
+                           value="{{email}}"
+                           autocomplete="email"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control"
+                           type="password"
+                           id="password"
+                           name="password"
+                           autocomplete="new-password"
+                           minlength="8"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
+                    <input class="form-control"
+                           type="password"
+                           id="confirm-password"
+                           name="confirm-password"
+                           autocomplete="new-password"
+                           minlength="8"
+                           required>
+                </div>
+
+                <button id="btn-register" type="submit">
+                    Start Exploring!
+                </button>
+
+            </form>
+
+            <div id="register-links">
+                <p>
+                    Already have an account?
+                    <a href="/login">Log in</a>
+                </p>
+
+                <p>
+                    <a href="/">← Back to Home</a>
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
