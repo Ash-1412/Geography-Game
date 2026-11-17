@@ -6,12 +6,9 @@ Contributors: Aasha Shakya, Dominique Romero, Wonderful Abioye, Evan Pigeon, Cal
 
 Technology Stack Used: HTML, CSS, Bootstrap, JavaScript, Node.js, PostgresSQL, and Render
 
-Prerequisites to run the application - 
+Prerequisites to run the application - "requirements here"
 
-To run locally you need to: 
-Download all of the files 
-Run docker containers for web and db
-Then visit http://localhost:3000/activeGame to use
+To run locally you need to: Download all of the files, run docker containers for web and db, and visit http://localhost:3000/activeGame to use
 
 How to run the tests
 
