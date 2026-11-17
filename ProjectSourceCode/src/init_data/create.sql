@@ -11,10 +11,15 @@ CREATE TABLE IF NOT EXISTS leaderboard (
     score VARCHAR(60) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS  locations (
-    location_id INT PRIMARY KEY,
-    location VARCHAR(100) NOT NULL,
-    facts VARCHAR(60) NOT NULL
+CREATE TABLE IF NOT EXISTS  countries (
+    country_id SERIAL PRIMARY KEY,
+    c_name VARCHAR(100) UNIQUE NOT NULL,
+    c_capital VARCHAR(100),
+    c_codes VARCHAR(3) UNIQUE,
+    c_flag TEXT,
+    c_region VARCHAR(50),
+    c_population BIGINT,
+    c_area INT
 );
 
 CREATE TABLE IF NOT EXISTS friends (

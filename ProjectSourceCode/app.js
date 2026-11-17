@@ -30,7 +30,7 @@ app.use('/resources', express.static(path.join(__dirname, 'src', 'resources')));
 app.get('/welcome', (req, res) => {
   res.json({status: 'success', message: 'Welcome!'});
 });
- 
+
 //======== LANDING PAGE ==================
 app.get('/', (req, res) => res.render('index'));
  
@@ -115,12 +115,12 @@ app.get('/profile', (req, res) => {
 });
  
 //======== ACTIVE GAME ==================
-app.get('/activeGame', (req, res) =>
-  res.render('activeGame', {
-    question: 'What is the capital of France?',
-    options: ['Paris', 'Rome', 'Madrid', 'Berlin'],
-  })
-);
+app.get('/activeGame', async (req, res) => {
+
+  res.render('activeGame');
+
+  
+});
  
 app.post('/answer', (req, res) => {
   console.log('Chose:', req.body.choice);
@@ -128,4 +128,6 @@ app.post('/answer', (req, res) => {
 });
  
 // 5. last line
-module.exports = app;
+// module.exports = app;
+//added db so index can use it with api
+module.exports = { app, db };
