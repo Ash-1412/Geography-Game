@@ -114,12 +114,19 @@ app.get('/profile', (req, res) => {
   res.render('profile', {username: req.session.user.username});
 });
  
+//======== Difficulty ==================
+app.get('/difficulty', async (req, res) => {
+
+  res.render('difficulty');
+
+});
+
 //======== ACTIVE GAME ==================
 app.get('/activeGame', async (req, res) => {
 
   res.render('activeGame');
 
-  
+
 });
  
 app.post('/answer', (req, res) => {
