@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/resources/css/styles.css">
+</head>
+
+<body>
+
+    {{> navbar}}
+    
+    <main id="question-screen">
+
+        <div class="game-card">
+
+            <header id="login-header">
+                <div class="compass" aria-hidden="true">✦</div>
+                <h1 id="game-title">Geo Game</h1>
+                <h2>Choose a Difficulty!</h2>               
+            </header>
+
+            <form id="options-form" action="/answer" method="POST">
+
+                <div class="options">
+                    <button type="submit" name="choice" value="Easy" class="option-btn">Easy</button>
+                    <button type="submit" name="choice" value="Medium" class="option-btn">Medium</button>
+                    <button type="submit" name="choice" value="Hard" class="option-btn">Hard</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
