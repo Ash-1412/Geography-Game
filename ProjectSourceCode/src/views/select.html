@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Region - GEO GAME</title>
+    <link rel="stylesheet" href="../resources/css/styles.css">
+</head>
+<body class="region-page">
+
+    <nav class="site-nav">
+        <a class="brand" href="index.html">🌍 GEO GAME</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="current" href="select-region.html">Game</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+            <a class="nav-signup" href="register.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="region-main">
+
+        <header class="page-heading">
+            <div class="compass">✦</div>
+            <h1>Choose Your Adventure</h1>
+            <p>Which part of the world will you explore today?</p>
+        </header>
+
+        <form action="activeGame.html" method="get" class="region-panel">
+
+            <fieldset>
+                <legend>Select a question region</legend>
+
+                <div class="region-grid">
+
+                    <label class="region-option whole-world">
+                        <input type="radio" name="region" value="world" checked>
+                        <span class="region-card">
+                            <span class="region-icon">🌐</span>
+                            <span class="region-name">Whole World</span>
+                            <span class="region-detail">A little bit of everywhere</span>
+                            <span class="region-tag">ALL REGIONS</span>
+                        </span>
+                    </label>
+
+                    <label class="region-option">
+                        <input type="radio" name="region" value="africa">
+                        <span class="region-card">
+                            <span class="region-icon">🌍</span>
+                            <span class="region-name">Africa</span>
+                            <span class="region-detail">54 countries to discover</span>
+                        </span>
+                    </label>
+
+                    <label class="region-option">
+                        <input type="radio" name="region" value="asia">
+                        <span class="region-card">
+                            <span class="region-icon">⛰️</span>
+                            <span class="region-name">Asia</span>
+                            <span class="region-detail">Mountains, cities & more</span>
+                        </span>
+                    </label>
+
+                    <label class="region-option">
+                        <input type="radio" name="region" value="europe">
+                        <span class="region-card">
+                            <span class="region-icon">🏰</span>
+                            <span class="region-name">Europe</span>
+                            <span class="region-detail">Countries & capitals</span>
+                        </span>
+                    </label>
+
+                    <label class="region-option">
+                        <input type="radio" name="region" value="north-america">
+                        <span class="region-card">
+                            <span class="region-icon">🏔️</span>
+                            <span class="region-name">North America</span>
+                            <span class="region-detail">From Arctic to tropics</span>
+                        </span>
+                    </label>
+
+                    <label class="region-option">
+                        <input type="radio" name="region" value="south-america">
+                        <span class="region-card">
+                            <span class="region-icon">🌿</span>
+                            <span class="region-name">South America</span>
+                            <span class="region-detail">Explore a diverse continent</span>
+                        </span>
+                    </label>
+
+                    <label class="region-option">
+                        <input type="radio" name="region" value="oceania">
+                        <span class="region-card">
+                            <span class="region-icon">🌊</span>
+                            <span class="region-name">Oceania</span>
+                            <span class="region-detail">Islands & the Pacific</span>
+                        </span>
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <button class="primary-button region-start" type="submit">
+                Start Exploring →
+            </button>
+
+            <p class="region-back">
+                <a href="index.html">← Back to Home</a>
+            </p>
+
+        </form>
+    </main>
+
+</body>
+</html>
