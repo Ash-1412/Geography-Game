@@ -1,8 +1,7 @@
 # Geography-Game
 
-The ReadMe.md should include the following:
+A guessing game where the player is given facts about a country and will attempt to guess the country based on this limited knowledge. The game has different levels of difficulty to test the players general country knowledge and see if they can guess the country given minimal info. The facts come from a request to an external Api and then all the data is stored in our database. On game start the facts are requested and stored to be used later as facts and answers. When the user enters the website they will see the landing page with the game title, play button, menu, and login. If they don't have a login then they can register and add their information into the database. The database will store user information such as username, encrypted password, their score, their friends list, and other achievements. They will be able to view their username, score, friends list, and achievements in their profile webpage.
 
-Brief Application description:
 Contributors -Aasha Shakya, Dominique Romero, Wonderful Abioye, Evan Pigeon, Calvin Voss In this case, it will be the team Members
 Technology Stack used for the project
 Prerequisites to run the application - Any software that needs to be installed to run the application
