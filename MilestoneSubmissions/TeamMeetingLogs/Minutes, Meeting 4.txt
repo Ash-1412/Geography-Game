@@ -1,0 +1,9 @@
+Minutes for Meeting 4, 11/17/2026.
+ - Calvin worked on the API connection to the database and made a difficulty page.
+ - Wonderful worked on CSS, creating and linking pages and made the page styles more uniform.
+ - Dominique worked on cleaning up and linking the views pages.
+ - Aasha worked on converting webpages to handlebars and login page inputs being functional. Navbar as a partial now.
+ - Evan worked on validating logins the user inputs.
+We should have everything linked up and webpages that are at least good placeholders.
+Being able to get things running by Thursday would be good.
+A student account of an AI should be sufficient token wise for extra credit AI implementation.
